@@ -1,7 +1,7 @@
 apiVersion: "v1"
 kind: "PersistentVolume"
 metadata:
-  name: data-volume-SIZEg-INST
+  name: data-volume-SIZEg-INST-MASTERID
 spec:
   capacity:
     storage: SIZEGi
@@ -11,5 +11,5 @@ spec:
   storageClassName: fast
   gcePersistentDisk:
     fsType: xfs
-    pdName: pd-ssd-disk-SIZEg-INST
+    pdName: pd-ssd-disk-SIZEg-INST-MASTERID
 
