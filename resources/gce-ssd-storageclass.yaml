@@ -2,8 +2,10 @@ kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
   name: fast
-provisioner: kubernetes.io/gce-pd
+provisioner: kubernetes.io/glusterfs
 parameters:
-  type: pd-ssd
-  zone: us-west2-c
-  replication-type: none
+  resturl: HEKETI_CLI_SERVER
+  restuser: ""
+  secretNamespace: ""
+  secretName: ""
+allowVolumeExpansion: true
